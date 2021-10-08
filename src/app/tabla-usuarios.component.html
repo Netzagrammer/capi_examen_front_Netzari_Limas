@@ -1,0 +1,20 @@
+<p><b>Tabla de Usuarios</b></p>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">Nombre de Usuario</th>
+    <th scope="col">Fecha de Nacimiento</th>
+    <th scope="col">Edad</th>
+    <th scope="col">Direccion</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let usuario of usuarios;">
+    <td>{{ usuario.user_id }}</td>
+    <td>{{ usuario.fecha_nacimiento }}</td>
+    <td>{{ usuario.edad }}</td>
+    <td>Ciudad: {{ usuario.ciudad }}, Colonia: {{ usuario.colonia }} CP: {{ usuario.cp }}, Calle: {{ usuario.domicilio }} #{{ usuario.numero_exterior }}</td>
+  </tr>
+  </tbody>
+</table>
